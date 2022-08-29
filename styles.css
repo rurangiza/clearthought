@@ -53,7 +53,7 @@ textarea {
 .subtitle {
   font-size: 1.4rem;
   margin-bottom: 2.5rem;
-  color: var(--gray-light);
+  color: rgba(245, 245, 245, 0.466);
 }
 
 .form_section {
