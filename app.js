@@ -2,6 +2,8 @@
 const express = require('express');
 const app = express();
 
+const fs = require('fs');
+
 // API Middlewares
 app.use(express.static("public")); // Display HTML + CSS
 
@@ -16,7 +18,15 @@ app.get('/', function(req,res){
 
 // When receive POST request
 app.post('/', (req, res) =>{
-    console.log(req.body); 
+    const content = req.body.trace;
+    console.log(content);
+    fs.writeFile('./content/form_data.txt', content, 'utf8', (err) => {
+        if (err) {
+            console.log(err);
+        }
+        // File written successfully
+        console.log("Content -> form_data.txt");
+    })
 })
 
 
