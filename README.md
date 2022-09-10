@@ -1,4 +1,4 @@
-![Interface before-after](/assets/Thumbnail.jpg)
+![Interface before-after](/public/assets/Thumbnail.jpg)
 
 # What is Clear Thought?
 
