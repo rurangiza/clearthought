@@ -13,7 +13,7 @@ app.use(express.urlencoded()); // Decode data send through HTML form
 // When receive GET request home page, send this
 app.get('/', function(req,res){
     // Send HTTP responsWorlde to browser
-    //res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 // When receive POST request
