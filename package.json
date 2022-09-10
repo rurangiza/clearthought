@@ -1,0 +1,33 @@
+{
+  "name": "clearthout",
+  "version": "1.0.0",
+  "description": "A tool for students at 42 school to decifer the traces from the Moulinette",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rurangiza/clearthought.git"
+  },
+  "keywords": [
+    "42",
+    "school",
+    "Moulinette",
+    "Deepthought",
+    "19",
+    "school"
+  ],
+  "author": "Arsene Rurangiza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rurangiza/clearthought/issues"
+  },
+  "homepage": "https://github.com/rurangiza/clearthought#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
