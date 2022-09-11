@@ -5,7 +5,7 @@ const fs = require('fs') // Access to file system
 // Save processed text to file
 function writeToFile(line, mode){
     fs.writeFileSync(
-        './content/new_data.html',
+        './public/output.html',
         line + "\n",
         {
             encoding: "utf8",
