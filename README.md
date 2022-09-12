@@ -10,6 +10,17 @@ So my goal with this project, is to make those computer generated emails, human 
 
 # To-do List
 
+## Major features
+
 - [x] Create a form capable of receiving multi-line text input from user and send that to a back-end for processing
-- [ ] Create a node.js server that receives form data, cleans it and converts it into HTML content
-- [ ] Send HTML to front-end, associated with its CSS, for the users to see
+- [x] Create a node.js server that receives form data, cleans it and converts it into HTML content
+- [x] Send HTML to front-end, associated with its CSS, for the users to see
+- [ ] Deploy web app online (Heroku? Netlify?)
+
+## Improvements
+
+- [ ] Handle every type of trace (shell scripts, file rights, C code,...)
+- [ ] Show exercice title
+- [ ] add success/failed icons
+- [ ] Show points when exercice is a success
+- [ ] Make the erros standout (Segmentation fault, Bus error, does not compile, Nothing turned in, timed-out, )
