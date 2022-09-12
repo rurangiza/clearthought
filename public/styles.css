@@ -24,6 +24,35 @@ body {
   color: white;
 }
 
+.wrapper {
+  max-width: 600px;
+  margin: auto;
+  padding-left: 48px;
+  padding-right: 16px;
+  border: solid 1px #424242;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 2rem;
+  padding-left: 24px;
+}
+
+span {
+  color: #9d4ded;
+}
+
 .container {
   display: flex;
   flex-direction: column;
