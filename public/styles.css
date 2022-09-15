@@ -3,6 +3,7 @@ html {
   --gray-light: #e7e7e7;
   --gray-dark: #424242;
   --white: #fff;
+  font-size: 8px;
 }
 
 p,
@@ -22,6 +23,7 @@ body {
   font-family: inter Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: var(--bg-dark);
   color: white;
+  font-size: 2rem;
 }
 
 .wrapper {
@@ -45,7 +47,7 @@ h3 {
 }
 
 p {
-  line-height: 2rem;
+  line-height: 3.2rem;
   padding-left: 24px;
 }
 
@@ -72,15 +74,19 @@ textarea {
   resize: none;
 }
 
+.img_robot {
+  margin-top: 3rem;
+}
+
 /* Text */
 .title {
-  font-size: 4rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  font-size: 40pt;
+  margin-top: 16pt;
+  margin-bottom: 8px;
 }
 
 .subtitle {
-  font-size: 1.4rem;
+  font-size: 18px;
   margin-bottom: 2.5rem;
   color: rgba(245, 245, 245, 0.466);
 }
@@ -91,11 +97,11 @@ textarea {
 }
 
 .form_textarea {
-  border: solid 1px var(--gray-dark);
-  border-radius: 0px;
+  border: solid 1px white;
+  border-radius: 5px;
   background-color: var(--bg-dark);
   outline: none;
-  padding: 20px;
+  padding: 2.5rem;
   color: white;
   font-family: inter;
 }
@@ -109,7 +115,7 @@ textarea {
 }
 
 .btn_submit {
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 10px 20px;
   border: 1px solid var(--black-dark);
   border-radius: 0px;
