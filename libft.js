@@ -19,7 +19,7 @@ function writeToFile(line, destFile, mode){
 
 function textToHtml(request, destFile) {
     // Store raw form data (plaintext)
-    let raw_content = request;
+    let raw_content = request.body.trace;
     // Ignore useless informations & convert [string] to [array of strings]
     raw_content = raw_content.substring(raw_content.indexOf("= ex00")).split('\n');
 
@@ -41,7 +41,7 @@ function textToHtml(request, destFile) {
                 raw_content[i] = raw_content[i].replace(/\r/, ''); // Enlever retour a la ligne
                 // Gerer les titres
             if (/^= ex/.test(raw_content[i])){
-                raw_content[i] = raw_content[i].replace(/= ex/, '<h1> ex').replace(/=+/, '</h1>');
+                raw_content[i] = raw_content[i].replace(/= ex/, '<h1> ex').replace(/=+/, "</h1>");
                 writeToFile(raw_content[i], destFile, "a");
             }
             // Gerer les sous-titres

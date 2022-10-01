@@ -24,6 +24,8 @@ body {
   background-color: var(--bg-dark);
   color: white;
   font-size: 2rem;
+  box-sizing: border-box;
+  height: 100vh;
 }
 
 .wrapper {
@@ -59,7 +61,6 @@ span {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
   align-items: center;
 }
 
@@ -75,30 +76,45 @@ textarea {
 }
 
 .img_robot {
-  margin-top: 3rem;
+  margin-top: 10px;
 }
 
 /* Text */
 .title {
-  font-size: 40pt;
+  font-size: 40px;
   margin-top: 16pt;
   margin-bottom: 8px;
 }
 
 .subtitle {
   font-size: 18px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   color: rgba(245, 245, 245, 0.466);
 }
 
 .form_section {
   display: flex;
   flex-direction: column;
+  width: 600px;
+  height: 469px;
+}
+
+.bottom_form {
+  height: 50px;
+  padding: 12px;
+  margin: 0;
+  border: solid white 1px;
+  border-radius: 0px 0px 5px 5px;
+  border-top: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 .form_textarea {
   border: solid 1px white;
-  border-radius: 5px;
+  border-bottom: 0px;
+  border-radius: 5px 5px 0px 0px;
   background-color: var(--bg-dark);
   outline: none;
   padding: 2.5rem;
@@ -106,25 +122,37 @@ textarea {
   font-family: inter;
 }
 
-.form_textarea:hover {
-  background-color: #42424225;
-}
-
-.form_textarea:focus {
-  border: 1px solid white;
+textarea::placeholder {
+  font-size: 18px;
 }
 
 .btn_submit {
   font-size: 2rem;
-  padding: 10px 20px;
+  padding: 10px 16px 10px 12px;
   border: 1px solid var(--black-dark);
   border-radius: 0px;
-  background-color: dodgerblue;
+  background-color: #9d4ded;
   color: white;
   cursor: pointer;
-  margin-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn_submit:hover {
-  background-color: rgb(19, 126, 233);
+  background-color: #7e3ebe;
+  transition: 0.1s;
+}
+
+.btn_icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+
+.footer {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
