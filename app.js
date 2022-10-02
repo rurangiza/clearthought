@@ -6,6 +6,9 @@ const {writeToFile, textToHtml} = require('./libft');
 
 const PORT = process.env.PORT || 2000
 
+// Where de final file will be saved
+const dest = "./public/output.html";
+
 const app = express();
 // API Middlewares
 app.use(express.static("public")); // Display HTML + CSS
@@ -22,9 +25,9 @@ app.get('/', function(req,res){
 // When receive POST request
 app.post('/', (req, res) =>{
     // Convert form data into HTML file
-    textToHtml(req ,'./public/output.html')
+    textToHtml(req , dest)
     // Send HTML to front-end
-    res.sendFile(path.join(__dirname, "./public/output.html"))
+    res.sendFile(path.join(__dirname, dest))
 })
 
 app.listen(PORT, ()=> console.log(`Server running on port ${PORT}`));

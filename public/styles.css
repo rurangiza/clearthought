@@ -109,6 +109,10 @@ textarea {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  
+  -webkit-box-shadow: 0px -18px 31px -21px var(--bg-dark);
+  -moz-box-shadow: 0px -18px 31px -21px var(--bg-dark);
+  box-shadow: 0px -18px 31px -21px var(--bg-dark);
 }
 
 .form_textarea {
